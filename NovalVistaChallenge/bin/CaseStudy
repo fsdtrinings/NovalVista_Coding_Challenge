@@ -1,0 +1,25 @@
+Under this application we've User & Resource Entity
+
+User entity is an object related to login user , whereas
+Resource entity is an information of file
+consists 
+ String FileName
+ string information ; // any random information 
+ and 
+ int completion; // some completion status of the file
+ 
+ --------------------------------------------------------------
+ 
+ Application has 4 users , stored in an ArrayList in file MyDatabaseConfiguration.java
+ 
+ application has many bugs , which are as follows
+ 1) application allows all users to login even after entering wrong password.
+ 2) application does not allow users to view resource , even when they have been assigned with this role
+ 
+ as well as 
+ 3) when user roles are null , even then User will get the message "Invalid User details or user not exist"
+  change this error message with relevant Exceptions
+   such as 
+    3.a) InvalidUserCerdentialsException
+    3.b) RoleNotAssignedException
+ 
